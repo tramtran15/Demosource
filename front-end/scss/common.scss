@@ -1,0 +1,173 @@
+select.form-control {
+  padding-left: 5px;}
+.bg-gray {
+  background: #8d8989;}
+
+.bg-gray-white {
+  background: #ede7e7;
+}
+
+.bg-black {
+  background: #000;
+  color: #fff;}
+
+.bg-white-gray {
+  background: #fcf7f7;}
+
+/*edit button boostrap*/
+.btn-default {
+  background: #ede7e7;
+}
+.btn-danger {
+  background: #c60012;
+  &:hover {
+    background: #de0115;
+  }
+}
+
+.btn-primary {
+  color: #fff !important;
+}
+
+.btn-black {
+  background-color: #1b1b1b;
+  border-color: #1b1b1b;
+  color: #fff;
+  &:hover,&:focus,&.active {
+    background-color: #0a0a0a;
+    border-color: #0a0a0a;
+    color: #fff;
+    outline: none;
+  }
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;}
+
+img {
+  max-width: 100%;}
+
+a {
+  color: #95989a;}
+a:hover, a.active, a:focus {
+  color: #e90027;
+  text-decoration: none;}
+.padT0 {
+  padding-top: 0;}
+
+.padL0 {
+  padding-left: 0 !important;
+}
+
+.padR0 {
+  padding-right: 0 !important;}
+
+.marT0 {
+  margin-top: 0;}
+
+.marT20 {
+  margin-top: 20px;}
+
+.marT30 {
+  margin-top: 30px;}
+
+.marT32 {
+  margin-top: 32px;
+}
+.marB0 {
+  margin-bottom: 0;}
+.marB20 {
+  margin-bottom: 20px;}
+.marB50 {
+  margin-bottom: 50px;}
+.marL15 {
+  margin-left: 15px;}
+h1.page-title {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;}
+
+.title-sub {
+  font-size: 20px;
+  margin: 25px 0 15px;
+  padding: 0;}
+
+.text-red {
+  color: #ff0000;}
+
+.form-horizontal .control-label {
+  text-align: left;
+  font-weight: normal;
+  padding-left: 0;
+}
+/* calender */
+.ui-datepicker td {
+  padding: 1px;
+  border: 1px solid #ddd;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: none;}
+.sunday .ui-state-default {
+  color: red;
+}
+.saturday .ui-state-default {
+  color: blue;
+}
+.ui-widget-header {
+  border: 1px solid #fff;
+  background: #337ab7;
+  color: #fff;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+  padding: 5px;
+  text-align: center;
+}
+
+/* Modal boostrap */
+button.close {
+  position: absolute;
+  right: -35px;
+  top: -4px;
+  color: #fff;
+  opacity: 1;
+  font-size: 35px;
+  span {
+    webkit-text-shadow: 0 5px 4px rgba(0,0,0,.5);
+    text-shadow: 0 5px 4px rgba(0,0,0,.5);
+  }
+}
+@media screen and (max-width: 992px){
+  .form-horizontal .control-label {
+    padding-left: 15px;}
+}
+@media screen and (max-width: 767px){
+  select, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  h1.page-title {
+    font-size: 20px;}
+
+  h2.title-sub {
+    font-size: 16px;
+    margin: 25px 0 10px;
+    padding: 0;}
+
+  .no-marB {
+    margin-bottom: 0;}
+}

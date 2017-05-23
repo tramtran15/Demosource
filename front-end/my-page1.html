@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=1" >
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <!--<link rel="shortcut icon" type="/vnd.microsoft.icon" href="./favicon.ico">-->
+    <!-- css -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- js -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.1.12.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/HolidayChk.js"></script>
+    <script src="js/datepicker_select.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo pull-left">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <nav class="main-nav">
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">新規会員</a></li>
+                    <li><a href="#">新規会員</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="main">
+    <div class="container">
+        <div class="row wrap-mypage">
+            <div class="col-sm-12 col-lg-3">
+                <div class="nav-mypage">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a class="btn-mypage" href="my-page1.html">マイページ</a></li>
+                        <li><a href="my-page2.html">予約履歴</a></li>
+                        <li><a href="my-page5.html">クチコミ履歴</a></li>
+                        <li class="mg-b40"><a href="my-page6.html">メッセージ履歴</a></li>
+                        <li><a href="my-page9.html">会員情報変更</a></li>
+                        <li><a href="#">アカウント変更</a></li>
+                        <li><a href="#">パスワード変更</a></li>
+                        <li><a href="#">アカウント削除</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end content left -->
+
+            <div class="col-sm-12 col-lg-9">
+                    <div class="block-mypage-content">
+                        <h2><span>予約一覧</span>
+                            <div class="pull-right"><a href="#" class="refresh">refresh</a></div></h2>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>予約番号</th>
+                                    <th>予約日</th>
+                                    <th>宿泊日</th>
+                                    <th>物件名</th>
+                                    <th> </th>
+                                    <th> </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1:</td>
+                                    <td>M000037</td>
+                                    <td>2016/08/03</td>
+                                    <td>2016/11/02-2016/11/12</td>
+                                    <td>部屋名or管理番号</td>
+                                    <td class="text-right"><a href="#" class="btn btn-default">詳細</a></td>
+                                    <td class="text-right"><a href="#" class="btn btn-danger">詳細</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1:</td>
+                                    <td>M000037</td>
+                                    <td>2016/08/03</td>
+                                    <td>2016/11/02-2016/11/12</td>
+                                    <td>部屋名or管理番号</td>
+                                    <td class="text-right"><a href="#" class="btn btn-default">詳細</a></td>
+                                    <td class="text-right"><a href="#" class="btn btn-danger">詳細</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1:</td>
+                                    <td>M000037</td>
+                                    <td>2016/08/03</td>
+                                    <td>2016/11/02-2016/11/12</td>
+                                    <td>部屋名or管理番号</td>
+                                    <td class="text-right"><a href="#" class="btn btn-default">詳細</a></td>
+                                    <td class="text-right"><a href="#" class="btn btn-danger">詳細</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="text-right"><a href=""> [もっと見る]</a></p>
+                    </div>
+                    <!-- end block-->
+                    <div class="row ">
+                        <div class="col-md-6">
+                            <div class="block-mypage-content">
+                                <h2 class="marB20"><span>会員情報概要</span></h2>
+                                <ul class="member-info">
+                                    <li><span class="width30">アカウント</span><span class="width70">h.nishijima@evolableasia.com</span></li>
+                                    <li class="clearfix"><span class="width30">会員氏名</span><span class="width70">西嶋博文</span>
+                                        <span class="pull-right yellow-rank">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </span>
+                                    </li>
+                                    <li><span class="width30">電話番号</span><span class="width70">0334550836</span></li>
+                                    <li><span class="width30">会員住所</span><span class="width70">〒105-0014 東京都港区芝3-5-5 芝公園ビル6Ｆ</span></li>
+                                </ul>
+                                <p class="text-right"><a href="">[変更する]</a></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="block-mypage-content">
+                                <h2 class="marB20"><span>身分証明書</span>
+                                    <div class="pull-right"><a href="#" class="btn btn-gray">未承認</a></div></h2>
+                                <div class="member-ident">
+                                    <div class="ident">※アップされているとここに出る</div>
+                                    <p>使用できる証明書</p>
+                                    <ul>
+                                        <li><a href="">免許証</a></li>
+                                        <li><a href="">免許証</a></li>
+                                        <li><a href="">免許証</a></li>
+                                    </ul>
+                                </div>
+                                <p class="text-right"><a href="">[登録する]</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end content right -->
+    </div>
+</div>
+<footer class="footer clearfix">
+    <div class="container">
+        <div class="text-center">
+            Copyright© Minpaku®. All Rights Reserved.
+        </div>
+    </div>
+    <div class="to-top">
+        <span class="">先頭へ戻る</span>
+    </div>
+</footer>
+</body>
+</html>

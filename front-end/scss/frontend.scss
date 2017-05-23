@@ -1,0 +1,155 @@
+.home-page {
+  .page-title {
+    margin-bottom: 20px;}
+}
+.list-item-home {
+  margin-bottom: 30px;}
+
+.img-content {
+  overflow: hidden;
+  img {
+    width: 100%;
+    transition: all .2s ease-in-out;
+    &:hover {
+      -webkit-transform: scale3d(1.2, 1.2, 1);
+      transform: scale3d(1.2, 1.2, 1);
+    }
+  }
+}
+
+.desc {
+  padding: 15px;
+
+  .img-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+
+  .sub-desc {
+    font-size: 12px;}
+
+  .desc-price {
+    font-size: 18px;}
+}
+
+.frm-booking-room {
+  max-width: 350px;
+  margin: 0 auto;
+
+  .control-label {
+    font-weight: normal;
+  }
+}
+.booking-note {
+  border-top:1px solid #9d9d9d;
+  margin-top: 15px;
+  padding-top: 10px;}
+
+.reg-room-content {
+  .btn {
+    min-width: 150px;}
+}
+#booking_room {
+  .center-modal,
+  a {
+    color: #fff;}
+  .modal-content {
+    background: #ff0000;}
+  button.close {
+    color: #ff0000;}
+}
+/*frontend list*/
+.frontend-list {
+  .page-title {
+    margin-top: 20px;
+    border-bottom: 3px solid #d7d9da;
+    padding-bottom: 10px;
+    margin-bottom: 20px;}
+  .reg-room-content {
+    padding-top: 0;
+    .btn {
+      min-width: 150px;}
+  }
+  .small {
+    font-size: 12px;
+    position: relative;
+    top: -2px;}
+  .reg-room {
+    margin-top: 40px;}
+}
+.list-room {
+  border:1px solid #c6c8c9;
+  background: #f8f8f8;
+  padding: 25px;
+  margin-bottom: 20px;
+  .room-img{
+    margin-right: -15px;
+    overflow: hidden;
+    border:1px solid #95989a;
+    img{
+      transition: all .2s ease-in-out;
+      &:hover {
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1);
+      }
+    }
+  }
+  .room-title {
+    font-size: 18px;
+    color: #000;
+    margin-top: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+    overflow: hidden;}
+  .location {
+    color: #000;}
+  .rank {
+    color: #d00032;}
+  .request-hire {
+    margin-bottom: 15px;}
+  .number-hire {
+    color: #000;
+    margin-right: 15px;}
+  .price-hire {
+    color: #000;
+    font-size: 22px;
+    vertical-align: middle;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .list-room {
+    .room-title {
+      margin-bottom: 10px;
+    }
+    .request-hire {
+       margin-bottom: 8px;}
+    p {
+      margin-bottom: 8px;}
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .list-item {
+    margin-bottom: 15px;}
+  .list-room {
+    padding: 15px;
+    .room-img {
+      margin-right: 0;
+      margin-bottom: 10px;}
+    .room-title {
+      margin-bottom: 10px;
+    }
+    .request-hire {
+      margin-bottom: 8px;}
+    p {
+      margin-bottom: 8px;}
+    .text-right {
+      border-top: 1px solid;
+      padding-top: 5px;
+    }
+  }
+}
+

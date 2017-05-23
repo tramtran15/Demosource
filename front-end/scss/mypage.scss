@@ -1,0 +1,592 @@
+.fr{ float: right}
+.fl { float: left}
+$ch-color: #c71717;
+$wh-color: #ffffff;
+$gr-color:#cccccc;
+// My-page1
+.wrap-mypage {
+  background: #fafafa;
+  padding-top:30px;
+  overflow: hidden;
+  margin:30px 0;
+}
+
+.nav-mypage {
+  position: relative;
+  padding: 0;
+  ul{
+    padding: 0;
+    li{
+      display:block;
+      a{
+        color:#666666;
+        text-align: center;
+        margin-bottom: 15px;
+        padding:15px;
+        border: 1px solid $gr-color;
+
+        &:hover,&:active{
+          background-color:$ch-color ;
+          color: $wh-color;
+        }
+      }
+    .btn-mypage {padding: 30px 0;}
+    }
+  }
+}
+@mixin refresh {
+  background: url("images/ico_refresh.png") no-repeat;
+  width: 29px;
+  height: 29px;
+  font-size: 0;
+  display: block;
+  margin-top:-5px;
+}
+
+.mypage-content {
+  h2 {
+    display: block;
+    background: #efeee7;
+    padding: 20px;
+    font-size: 1.2em;
+    border: 1px solid $gr-color;
+    span {
+      display: inline-block;
+      width: 70%;
+    }
+    .refresh {
+      @include refresh;
+    }
+
+  }
+}
+
+
+// My-page3
+@mixin titleh4{
+  border-top: 1px solid $gr-color;
+  padding:30px 0;
+  margin-top: 30px;
+}
+@mixin btn-register-black{
+  background: #000000;
+  margin: 20px 0px;
+}
+
+@mixin btn-register-gray{
+  background: #95989a;
+  margin: 10px 0px;
+}
+.block-changer-account {
+  position: relative;
+  padding: 0 30px;
+  h5,h4{
+    text-align: center;
+  }
+  h4{@include titleh4;  }
+  p{
+    font-size: 11px;
+    text-align: center;
+  }
+  .form-group label {
+    font-size: 11px;
+    font-weight: normal;
+    padding:10px 0px 0 15px;
+  }
+  .btn-black {
+    @include btn-register-black;
+    width: 78%;
+    margin:40px 0 0;
+    a {
+      padding: 15px 0;
+      color: $wh-color;
+      font-size: 1.6em !important;
+      display:block;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+  .btn-gray {
+    @include btn-register-gray;
+    width:50%;
+    margin-left: 15%;
+    a {
+      padding: 10px 0;
+      color: $wh-color;
+      font-size: 1.2em !important;
+      display:block;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+  .form-group {
+    #inputName {
+      background-color:#e8e7e7;
+    }
+  }
+}
+.yellow-rank {
+  color: #ff7e00;
+}
+// My-page2
+.mg-b40 { margin-bottom: 40px}
+.block-mypage-content {
+  position: relative;
+  display:block;
+  overflow: hidden;
+  margin-bottom: 20px;
+  .table-hover {
+    tr,td{ vertical-align: middle}
+    th { font-weight: normal}
+  }
+  .title{
+    font-size: 1.5em;
+    padding: 10px 0;
+  }
+  h4{
+    text-align: center;
+    margin-top: 0;
+    span{
+      display: block;
+      border-bottom: 2px solid #ddd;
+      padding: 0 0 10px 0;
+    }
+  }
+  h2{
+    display:block;
+    background: #efeee7;
+    padding: 20px;
+    font-size: 1.2em;
+    border: 1px solid $gr-color;
+    margin-top: 0;
+    height: 60px;
+    span {
+      display:inline-block;
+      width:65%;
+      float: left;
+    }
+    .refresh{@include refresh;}
+  }
+  .btn-default,
+  .btn-danger,
+  .btn-black {
+    padding: 2px 25px;
+  }
+  .btn-red {
+    background:$ch-color;
+    color: $wh-color;
+  }
+  .btn-bla {
+    background: #000;
+    color: $wh-color;
+  }
+  .btn-gray {
+    background: #95989a;
+    margin-top: -8px;
+    color: $wh-color;
+  }
+  ul.member-info {
+    display:block;
+    padding: 0;
+    margin-bottom: 20px;
+    li{
+      list-style: none;
+      padding: 10px 0;
+      width:100%;
+      .width30{
+        width:25%;
+        display:inline-block;
+      }
+      .width70{
+        width:75%
+      }
+    }
+  }
+  .member-ident {
+    position: relative;
+    overflow: hidden;
+    .ident{
+      border: 1px solid $gr-color;
+      width:65%;
+      height:200px;
+      text-align: center;
+      display:inline-block;
+      float: left;
+      margin-right: 15px;
+    }
+    ul {
+      display:block;
+      li {
+        list-style: inside;
+      }
+    }
+  }
+}
+// My-page4
+
+@media screen and (max-width: 767px) {
+  .dent-content {
+    padding: 0 !important;
+
+  }
+}
+
+.block-mypage-dentification {
+  position: relative;
+  h4 {
+    text-align: center;
+    span{
+      display: block;
+      border-bottom: 2px solid #ddd;
+      padding: 0 0 10px 0; }
+  }
+  .dent-content {
+    padding: 40px;
+    width:100%;
+    .btn-register {
+      width:100%;
+      a {
+        margin: auto 0;
+        width:50%;
+        margin-left: 25%;
+      }
+    }
+    .btn-black {
+      margin: 10px auto 0;
+      font-size: 1.6em;
+    }
+    .font-style1 {
+      font-size: 1.4em;
+      text-align: center;
+    }
+    .border-red {
+      display:block;
+      padding: 15px;
+      border: 1px solid $ch-color;
+      color:$ch-color;
+    }
+    .img-upload{
+      width:100%;
+      margin: auto 0;
+      display: block;
+      ul {
+        text-align: center;
+          li{
+            width: 130px;
+            height: 100px;
+            display:inline-block;
+            padding:10px;
+            background: #f1eee5;
+            text-align: center;
+            font-size: 12px;
+            margin: 10px 25px;
+            img {
+              width:70px;
+              height: 50px;
+              background: $gr-color;
+              margin-top: 5px;
+            }
+        }
+      }
+    }
+    .img-check {
+      display:block;
+      overflow: hidden;
+      width: 100%;
+
+      p{
+        width: 350px;
+        height:200px;
+        padding:10px;
+        background: #eee;
+        margin: 0 auto;
+      }
+      ul
+      {background: #f1eee5;
+        width: 350px;
+        height:120px;
+        padding:3% 0 3% 12%;
+        margin: 0 auto;
+        color:#333;
+        li{
+          text-align: left;
+          list-style-type: decimal-leading-zero;
+          list-style: none inside;
+          margin-left: 30px;
+        }
+      }
+    }
+    .checkbox label:after {
+      content: '';
+      display: inline-block;
+    }
+
+    .checkbox .cr {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #a9a9a9;
+      border-radius: .25em;
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: .3em;
+      vertical-align:bottom;
+    }
+
+    .radio .cr { border-radius: 50%;}
+
+    .checkbox .cr .cr-icon {
+      position: absolute;
+      font-size: .8em;
+      line-height: 0;
+      top: 52%;
+      left: 14%;
+    }
+
+    .checkbox label input[type="checkbox"] {
+      display: none;
+    }
+
+    .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+      opacity: 0;
+    }
+
+    .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
+      opacity: 1;
+      font-size: 1em;
+    }
+
+    .checkbox label input[type="checkbox"]:disabled + .cr{
+      opacity: .5;
+    }
+
+    /* IE8: Disable custom styling. */
+
+    .ie8 .checkbox label input[type="checkbox"] {
+      display: inline-block;
+    }
+  }
+
+}
+// My-page5
+$gr-color:#ccc;
+.dis-bg { background: #ebebeb !important;}
+.dis-history {
+  position: relative;
+  border:1px solid $gr-color;
+  background-color:$wh-color;
+  overflow: hidden;
+  .title {
+    display:block;
+    border-bottom: 1px solid $gr-color;
+    margin: 0;
+    padding: 15px 0;
+  }
+  h4{
+    background: #fafafa;
+    padding: 15px;
+    text-align: left;
+  }
+    .row-ranking {
+    padding: 20px;
+    ul{
+      position: relative;
+      li {
+        list-style: none;
+        background: #fafafa;
+        padding: 5px;
+        margin-bottom: 5px;
+        width:100%;
+        span{
+          display: inline-block;
+          width:60%;
+          float: left;
+        }
+      }
+    }
+  }
+  .wrap-text1{  padding: 15px;
+    display: block;
+    overflow: hidden;
+  }
+  .comment-owner {
+    background: #f1eee5;
+    width: 90%;
+    float: right;
+    padding: 25px;
+    margin: 15px;
+    position: relative;
+    .title-cm{
+      display:block;
+      padding: 0;
+      height: 40px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      p{
+        display: block;
+        float: left;
+      }
+    }
+    .wrap-text2 {  text-justify: auto;
+    }
+  }
+}
+.bg-white {
+  background: $wh-color ;
+  padding: 0 10px;
+}
+@media screen and (max-width: 767px) {
+  .comment-owner {
+    .title-cm{
+      p{
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+// My-page width600
+@media screen and (max-width: 767px) {
+  .block-width500 {
+    width: 100% !important;
+  }
+}
+.bg-grey {background: #eee}
+.block-width500 {
+  display: block;
+  width: 500px;
+  background: #fafafa;
+  margin: auto 0;
+  padding: 30px;
+  h4{
+    text-align: center;
+    color: $ch-color;
+  }
+  .text-stylle2 {
+    font-size: 11px;
+    color:$ch-color;
+    display: block;
+    border-top: 1px solid $gr-color;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+  .btn-register {
+    display:block;
+    .btn-primary {
+      background: $ch-color;
+    }
+  }
+}
+
+.row-fo {
+  overflow: hidden;
+  position:relative;
+  padding: 0;
+  margin: 20px 0;
+  border-bottom: 1px solid $gr-color;
+  .form-group {
+    padding: 0;
+  }
+  .btn-style1 {
+    background: $ch-color;
+    height: 78px;
+    display: block;
+    margin-left: 20px;
+    padding: 0 20px 0 20px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .row-fo {
+    .form-group {
+      padding: 0;
+    }
+    .btn-style1 {
+      margin-left: 20px;
+      padding: 0 17px !important;
+    }
+
+  }
+}
+.bor-BT {
+  border-bottom: 1px solid $gr-color;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.mgb-10 { margin-bottom: 10px}
+.width-200 { width:200px}
+
+.bg-red { background: $ch-color;}
+.bg-gray { background: #999; color: $wh-color}
+.text-style3 { text-align: center; color:$ch-color;}
+
+// My-page-post-review
+.block-post-review{
+  width: 700px;
+  margin: auto 0;
+  position: relative;
+  padding:50px ;
+  background: #fafafa;
+  overflow: hidden;
+  .form-group {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+}
+.text-red{color:#ff0000;}
+.block-member-information {
+  h4 {
+    padding-top: 0 !important;
+  }
+  .form-group {
+    margin-left: 0 !important;
+  }
+  label {
+    .special {
+      font-size: 10px;
+      color:#ff0000;
+      vertical-align: middle ;
+    }
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .block-member-information {
+    .form-group {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.btn-style1 {
+  padding: 10px;
+  margin-left: 17%;
+  font-size: 1.6em;
+}
+
+.text-style4 { font-size: 11px}
+
+.block-registration-mp {
+  width: 100%;
+  overflow: hidden;
+  .width650 {
+    display: block;
+    margin: auto ;
+    width: 650px;}
+    .form-inline {
+      margin: 40px 0;
+      .input-group-addon{
+        background:#ede7e7 ;
+        height: 50px;
+      }
+      .form-control{
+        width: 450px;
+        height: 50px;
+      }
+    }
+    ul{ margin: 40px 0;
+      padding: 0;
+      li{list-style: inside}
+    }
+  }
+

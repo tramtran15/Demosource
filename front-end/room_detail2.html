@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=1" >
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <!--<link rel="shortcut icon" type="/vnd.microsoft.icon" href="./favicon.ico">-->
+    <!-- css -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/fancyBox/source/jquery.fancybox.css">
+    <!-- js -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.1.12.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/HolidayChk.js"></script>
+    <script src="js/datepicker_select.js"></script>
+    <script src="js/fancyBox/source/jquery.fancybox.pack.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $('.fancybox').fancybox({
+            openEffect  : 'none',
+            closeEffect : 'none',
+
+            prevEffect : 'none',
+            nextEffect : 'none',
+
+            closeBtn  : false,
+
+            helpers : {
+                title : {
+                    type : 'inside'
+                },
+                buttons	: {}
+            },
+
+            afterLoad : function() {
+                this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo pull-left">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <nav class="main-nav">
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">新規会員</a></li>
+                    <li><a href="#">新規会員</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="main booking-page">
+    <div class="top-main"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-lg-9">
+                <div class="content-left">
+                    <div class="big-image text-center">
+                        <h1 class="page-title text-left">【バヤマルーム】東京ドームまで17分！2016年7月オープン！キャンペーン価格で販売中！</h1>
+                    </div>
+                    <h2 class="title-sub">物件の写真</h2>
+                    <div class="img-slide">
+                        <div class="col-sm-4"><a class="fancybox" data-fancybox-group="button" href="images/img2.png"><img src="images/img2.png" alt=""></a></div>
+                        <div class="col-sm-4"><a class="fancybox" data-fancybox-group="button" href="images/img3.png"><img src="images/img3.png" alt=""></a></div>
+                        <div class="col-sm-4"><a class="fancybox" data-fancybox-group="button" href="images/img4.png"><img src="images/img4.png" alt=""></a></div>
+                    </div>
+                    <h2 class="title-sub">物件の紹介</h2>
+                    <p>2016年7月にオープンしたばかりのホテルタイプのお部屋です。東京ドームまで乗り換えなしで17分で行けるため、東京ドームのイベント・ライブ・プロ野球観戦の前後泊にピッタリのお部屋です。5名まで宿泊でき、駐車場もあるため家族旅行にも最適です。 徒歩圏内には、温泉・釣り堀・ショッピングモールがあり電車で移動しなくても観光気分が味わえます。</p>
+                    <div class="tag-content">
+                        <h2 class="title-sub">物件の仕様</h2>
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3"><a href="#">シャワー</a></div>
+                            <div class="col-xs-4 col-sm-3"><a class="watched" href="#">テレビ</a></div>
+                            <div class="col-xs-4 col-sm-3"><a href="#">トイレ</a></div>
+                            <div class="col-xs-4 col-sm-3"><a href="#">キッチン</a></div>
+                            <div class="col-xs-4 col-sm-3"><a href="#">冷蔵庫</a></div>
+                            <div class="col-xs-4 col-sm-3"><a href="#">スク</a></div>
+                            <div class="col-xs-4 col-sm-3"><a href="#">ソファー</a></div>
+                            <div class="col-xs-4 col-sm-3"><a class="watched" href="#">ドライヤー</a></div>
+                            <div class="col-xs-4 col-sm-3"><a class="watched" href="#">シャワー</a></div>
+                            <div class="col-xs-4 col-sm-3"><a class="watched" href="#">シャワー</a></div>
+                            <div class="col-xs-4 col-sm-3"><a class="watched" href="#">シャワー</a></div>
+                            <div class="col-xs-4 col-sm-3"><a href="#">シャワー</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end content left -->
+
+            <div class="col-sm-4 col-lg-3">
+                <div class="content-right">
+                    <div class="reg-room">
+                        <h3 class="title-sub">この物件を予約する</h3>
+                        <div class="reg-room-content">
+                            <p class="title-sub" style="margin-top: 0;">東京都</p>
+                            <div class="clearfix">
+                                <div class="col-sm-4">
+                                    <div class="datepickerInput undecided in clearfix">
+                                        <input type="text" id="from_date" class="form-control" placeholder="チェックイン" >
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="datepickerInput undecided out clearfix">
+                                        <input type="text" id="to_date" class="form-control" placeholder="チェックアウト">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <select>
+                                        <option value="">利用人数</option>
+                                        <option value="1">1人</option>
+                                        <option value="2">2人</option>
+                                        <option value="3">3人</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="total-price">
+                                <p class="text-center">5名3泊利用</p>
+                                <p class="text-center">合計 <strong>210,000</strong>円</p>
+                            </div>
+                            <div class="text-center"><input id="startSearch" class="btn btn-primary" type="button" value="検索"></div>
+                            <div class="text-center marT20"><input type="submit" class="btn btn-danger call-modal" value="予約する"></div>
+                        </div>
+                    </div> <!-- end reg-room -->
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="result-rearch">
+                                        <p class="title-sub">内訳</p>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <span class="table-cel"></span>
+                                                <div class="table-cel2">
+                                                    <div class="list-item clearfix">
+                                                        <div class="text-item">部屋代</div>
+                                                        <div class="price-item">¥18,000</div>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <div class="text-item">追加ゲストチャージ</div>
+                                                        <div class="price-item">¥5,000</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="table-cel"></span>
+                                                <div class="table-cel2">
+                                                    <div class="list-item">
+                                                        <div class="text-item">長期滞在割引</div>
+                                                        <div class="price-item">¥0</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="table-cel"></span>
+                                                <div class="table-cel2">
+                                                    <div class="list-item">
+                                                        <div class="text-item">清掃費用×1</div>
+                                                        <div class="price-item">¥0</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="table-cel"></span>
+                                                <div class="table-cel2">
+                                                    <div class="list-item">
+                                                        <div class="text-item">MINPAKU手数料</div>
+                                                        <div class="price-item">¥2,300</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="table-cel"></span>
+                                                <div class="table-cel2">
+                                                    <div class="list-item clearfix">
+                                                        <div class="text-item">宿泊料金合計</div>
+                                                        <div class="price-item">¥25,300</div>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <div class="text-item">消費税</div>
+                                                        <div class="price-item">¥2,024</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="sum-price clearfix">
+                                                <div class="pull-left">宿泊料金合計(税込)</div>
+                                                <div class="pull-right">¥210,000</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <div class="tag-content">
+                                    <a class="watched" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        内訳明細を閉じる
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end collapse-->
+
+                    <div class="social-network clearfix">
+                        <a href="#"><img src="images/ico_mail.png" alt=""></a>
+                        <a href="#"><img src="images/ico_face.png" alt=""></a>
+                        <a href="#"><img src="images/ico_twitter.png" alt=""></a>
+                        <a href="#"><img src="images/ico_google.png" alt=""></a>
+                        <a href="#"><img src="images/ico_paint.png" alt=""></a>
+                        <a href="#" class="last-icon"><img src="images/ico_line.png" alt=""></a>
+                    </div>
+                </div> <!-- end content right-->
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer clearfix">
+    <div class="container">
+        <div class="text-center">
+            Copyright© Minpaku®. All Rights Reserved.
+        </div>
+    </div>
+    <div class="to-top">
+        <span class="">先頭へ戻る</span>
+    </div>
+</footer>
+
+<!-- model -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="center-modal">
+                    <span class="v-midd"></span>
+                    <div class="body-modal-content">
+                        <form action="javascript:;"></form>
+                        <div class="modal-login-content">
+                            <p class="text-red text-center">メンバーの方はログインして下さい。</p>
+                            <div class="modal-login">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="メアド">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="パスワード">
+                                </div>
+                                <div class="form-group text-center">
+                                    <input type="submit" class="btn btn-danger" value="ログインして予約する">
+                                </div>
+                                <a href="#">パスワード忘れた方</a>
+                            </div>
+                        </div>
+
+                        <div class="modal-reg">
+                            <div class="modal-login">
+                                <p class="text-red text-center">メンバーでない方はこちらへどうぞ。</p>
+                                <a href="#" class="btn btn-danger">会員登録せずに予約する</a>
+                                <p class="marT20">会員登録をしたい方もこのままお進み下さい。予約と同時にカンタン登録が可能です</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
